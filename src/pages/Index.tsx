@@ -1,19 +1,19 @@
-import FloatingHearts from "@/components/FloatingHearts";
-import HeroSection from "@/components/HeroSection";
-import LoveLetter from "@/components/LoveLetter";
-import ImageGallery from "@/components/ImageGallery";
-import WishesSection from "@/components/WishesSection";
-import Footer from "@/components/Footer";
+import StarField from "@/components/StarField";
+import MoonHero from "@/components/MoonHero";
+import LoveMessage from "@/components/LoveMessage";
+import MemoryGallery from "@/components/MemoryGallery";
+import BirthdayWishes from "@/components/BirthdayWishes";
+import CelestialFooter from "@/components/CelestialFooter";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
-      <FloatingHearts />
-      <HeroSection />
-      <LoveLetter />
-      <ImageGallery />
-      <WishesSection />
-      <Footer />
+    <div className="min-h-screen bg-gradient-night relative overflow-x-hidden">
+      <StarField />
+      <MoonHero />
+      <LoveMessage />
+      <MemoryGallery />
+      <BirthdayWishes />
+      <CelestialFooter />
     </div>
   );
 };

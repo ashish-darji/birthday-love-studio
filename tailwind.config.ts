@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -57,24 +62,30 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        rose: {
-          DEFAULT: "hsl(var(--rose))",
-          light: "hsl(var(--rose-light))",
-          dark: "hsl(var(--rose-dark))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
         },
-        coral: "hsl(var(--coral))",
-        cream: "hsl(var(--cream))",
-        gold: "hsl(var(--gold))",
-        blush: "hsl(var(--blush))",
+        purple: {
+          deep: "hsl(var(--purple-deep))",
+          cosmic: "hsl(var(--purple-cosmic))",
+        },
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          light: "hsl(var(--navy-light))",
+        },
+        silver: "hsl(var(--silver))",
+        starlight: "hsl(var(--starlight))",
+      },
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        elegant: ["Cormorant Garamond", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        script: ["Dancing Script", "cursive"],
-        display: ["Quicksand", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -85,32 +96,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
-          "50%": { transform: "translateY(-20px) rotate(5deg)" },
-        },
-        pulse: {
-          "0%, 100%": { transform: "scale(1)", opacity: "1" },
-          "50%": { transform: "scale(1.1)", opacity: "0.8" },
-        },
-        sparkle: {
-          "0%, 100%": { opacity: "0", transform: "scale(0)" },
-          "50%": { opacity: "1", transform: "scale(1)" },
-        },
-        heartbeat: {
-          "0%, 100%": { transform: "scale(1)" },
-          "25%": { transform: "scale(1.1)" },
-          "50%": { transform: "scale(1)" },
-          "75%": { transform: "scale(1.1)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 6s ease-in-out infinite",
-        pulse: "pulse 2s ease-in-out infinite",
-        sparkle: "sparkle 2s ease-in-out infinite",
-        heartbeat: "heartbeat 1.5s ease-in-out infinite",
       },
     },
   },
